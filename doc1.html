@@ -1,0 +1,91 @@
+doc1.html
+<html>
+	<head>
+		<title>Menu Desplegable</title>
+		<style type="text/css">
+			
+		    
+      * {<!-- signo univeral que me va a permitir declarar en mi estilo-->
+        padding:1px;
+        margin:1px;
+      }
+     
+     #header {
+          margin:auto;<!-- margen automatico -->
+          width:600px;
+          font-family: Candara, Helvetiva, sans-serif;
+     }
+
+     ul, ol {<!-- lista ordenada sin ningun estilo-->
+          list-style:none;
+     }
+
+     .nav li a {<!-estilo de mi barra de navegacion-->
+          background-color:black;
+          color:#fff;
+          text-decoration:none;
+          padding:18px 35px;<!-- espaciado-->
+          display:block;<!-- que lo presente en forma de bloque -->
+     }
+
+     .nav li a:hover {
+          background-color:#434343;
+     }
+     
+     .nav > li {
+          float:left;
+     }
+
+     .nav li ul{
+          display:none;
+          position:absolute;
+          min-width:90px;<!--annchura minima del bloque -->
+     } 
+     
+     .nav li:hover > ul{
+          display:block;
+     }
+     .nav li ul li {
+          position: relative;<!-- ubicar el submenu -->
+     }
+     
+     .nav li ul li ul {<!--desplegar el submenu a la derecha al tope -->
+          right:-85 px;
+          top:0px;
+     }
+     
+		</style>
+	</head>
+	<body background="fondo.jpg">
+		<div id="header">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Quienes somos?</a>
+					<ul>
+						<li><a href="">Nosotros</a></li>
+						<li><a href="">Misi&oacute;n</a></li>
+						<li><a href="">Visi&oacute;n</a></li>
+						<li><a href="">Objetivos</a>
+							<ul>
+								<li><a href="">Submenu1</a></li>
+								<li><a href="">Submenu2</a></li>
+								<li><a href="">Submenu3</a></li>
+								<li><a href="">Submenu4</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="">Acerca de</a>
+					<ul>
+						<li><a href="">Productos</a></li>
+						<li><a href="">Promociones</a></li>
+						<li><a href="">Clientes</a></li>
+						<li><a href="">Ventas</a></li>
+					</ul>
+				</li>
+				<li><a href="">Contacto</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
+
